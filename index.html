@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Day Planner</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="style.css" rel="stylesheet"></link>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.js"></script>
+
+</head>
+
+<body>
+    <div id="container" class="container">
+        <h1>Day Planner</h1> 
+        <label type="datetime-local" id="date" class="date"></label>
+            
+        <div class="row">
+            <div class="col-md-2">
+                <div id="hour9" class="time-frame">9:00</div>
+            </div>
+            <div class="col-md-9">
+                <input type="text" id="input9" class="to-do"></input>
+            </div>
+            <div class="col-md-1">
+                <button id = "save9"  data-num="9" class = "save-btn btn"><img src="https://img.icons8.com/nolan/30/save.png"></button>
+            </div>   
+        </div>
+
+        <div class="row">
+            <div class="col-md-2">
+                <div id="hour10" class="time-frame">10:00</div>
+            </div>
+            <div class="col-md-9">
+                <input type="text" id="input10" class="to-do"></input>
+            </div>
+            <div class="col-md-1">
+                <button id = "save10" data-num="10" class = "save-btn btn"><img src="https://img.icons8.com/nolan/30/save.png"></button>
+            </div>   
+        </div>
+
+        <div class="row">
+            <div class="col-md-2">
+                <div id="hour11" class="time-frame">11:00</div>
+            </div>
+            <div class="col-md-9">
+                <input type="text" id="input11" class="to-do"></input>
+            </div>
+            <div class="col-md-1">
+                <button id = "save11" data-num="11" class = "save-btn btn"><img src="https://img.icons8.com/nolan/30/save.png"></button>
+            </div>   
+        </div>
+
+        <div class="row">
+            <div class="col-md-2">
+                <div id="hour12" class="time-frame">12:00</div>
+            </div>
+            <div class="col-md-9">
+                <input type="text" id="input12" class="to-do"></input>
+            </div>
+            <div class="col-md-1">
+                <button id = "save12" data-num="12" class = "save-btn btn"><img src="https://img.icons8.com/nolan/30/save.png"></button>
+            </div>   
+        </div>
+
+        <div class="row">
+            <div class="col-md-2">
+                <div id="hour13" class="time-frame">13:00</div>
+            </div>
+            <div class="col-md-9">
+                <input type="text" id="input13" class="to-do"></input>
+            </div>
+            <div class="col-md-1">
+                <button id ="save13" data-num="13" class = "save-btn btn"><img src="https://img.icons8.com/nolan/30/save.png"></button>
+            </div>   
+        </div>
+
+        <div class="row">
+            <div class="col-md-2">
+                <div id="hour14" class="time-frame">14:00</div>
+            </div>
+            <div class="col-md-9">
+                <input type="text" id="input14" class="to-do"></input>
+            </div>
+            <div class="col-md-1">
+                <button id = "save14" data-num="14" class = "save-btn btn"><img src="https://img.icons8.com/nolan/30/save.png"></button>
+            </div>   
+        </div>
+
+        <div class="row">
+            <div class="col-md-2">
+                <div id="hour15" class="time-frame">15:00</div>
+            </div>
+            <div class="col-md-9">
+                <input type="text" id="input15" class="to-do"></input>
+            </div>
+            <div class="col-md-1">
+                <button id = "save15" data-num="15" class = "save-btn btn"><img src="https://img.icons8.com/nolan/30/save.png"></button>
+            </div>   
+        </div>
+
+        <div class="row">
+            <div class="col-md-2">
+                <div id="hour16" class="time-frame">16:00</div>
+            </div>
+            <div class="col-md-9">
+                <input type="text" id="input16" class="to-do"></input>
+            </div>
+            <div class="col-md-1">
+                <button id = "save16" data-num="16" class = "save-btn btn"><img src="https://img.icons8.com/nolan/30/save.png"></button>
+            </div>   
+        </div>
+
+        <div class="row">
+            <div class="col-md-2">
+                <div id="hour17" class="time-frame">17:00</div>
+            </div>
+            <div class="col-md-9">
+                <input type="text" id="input17" class="to-do"></input>
+            </div>
+            <div class="col-md-1">
+                <button id = "save17" data-num="17" class = "save-btn btn"><img src="https://img.icons8.com/nolan/30/save.png"></button>
+            </div>   
+        </div>
+    </div>
+    
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
+    <script src="script-jquery.js"></script>
+</body>
+</html>
