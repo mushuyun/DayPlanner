@@ -52,6 +52,22 @@ function renderTasks() {
       }
 } 
     renderTasks();
+
+    let now = moment(); 
+    let hour = now.get('hour');
     
+    var hourArray = [$("#hour9"), $("#hour10"), $("#hour11"), $("#hour12"), $("#hour13"), $("#hour14"), $("#hour15"), $("#hour16"), $("#hour17")];
 
+    function compareTime(){ 
+      
+      for ( i=0; i < hourArray.length; i++){
+          if (parseInt(hourArray[i].text()) < parseInt(hour) ) {
+            hourArray[i].parent().parent().css("background-color","#F0E68C");
+            $(".to-to").css("background-color","#F0E68C");
+          } else {
+            hourArray[i].parent().parent().css("background-color","#FF7F50");
+          }
+        }
+      } 
 
+  compareTime(); 

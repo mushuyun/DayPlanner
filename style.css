@@ -9,11 +9,14 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
   }
   
+  h1{
+    color: darkblue;
+  }
   .date{
+    color: blue;
     font-size: 20px;
   }
   .container {
-    width: 800px;
     background-color: #eeeeee;
     padding: 3rem;
     border-radius: 1rem;
@@ -27,7 +30,7 @@ body {
   .row{
     margin:1px;
     height: 60px;
-    width:100%;
+    width: 800px;
     border: 2px solid blueviolet;
     border-radius: 5px;
   }
@@ -40,6 +43,7 @@ body {
     height:100%;
     box-sizing: 1px solid border-box;
   }
+
 
   .time-frame{
   padding: 10px;
@@ -55,13 +59,6 @@ body {
     margin-bottom: 0px auto;
   }
 
-  @media screen and (max-width: 768px) {
-
-    body {
-      background-color: #333;
-    }
-  
-    .container {
-      width: 600px;
-    }
+  .btn-hover{
+      background-color: rgb(6, 219, 219);
   }
