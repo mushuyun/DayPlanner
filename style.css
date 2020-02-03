@@ -12,10 +12,12 @@ body {
   h1{
     color: darkblue;
   }
+  
   .date{
     color: blue;
     font-size: 20px;
   }
+
   .container {
     background-color: #eeeeee;
     padding: 3rem;
@@ -28,10 +30,11 @@ body {
   }
  
   .row{
-    margin:1px;
+    
     height: 60px;
     width: 800px;
-    border: 2px solid blueviolet;
+    border-bottom: 1px;
+    border: 1px solid blueviolet;
     border-radius: 5px;
   }
 
@@ -47,20 +50,27 @@ body {
     height:100%;
     border: none;
     border-left: 1px dotted;
-    border-right: 1px dotted;;
-    
-  }
-
-  .col-md-2{
-    display: inline;
+    border-right: 1px dotted;;  
   }
 
   .time-frame{
-  padding: 10px;
-  font-size: 20px;
-  text-align: center;
+  padding-top: 10px;
+  padding-left: 45px;
+  margin-right: 0px;;
+  font-size: 18px;
+  text-align: right;
   }
- 
+
+  #hour9{
+    padding-left: 50px;
+  }
+
+ .decoration{
+  padding-top: 10px;
+  font-size: 18px;
+  text-align: left;
+  padding-right: 45px;
+ }
   .save-btn{ 
     position: absolute;
     float:rigtt;
